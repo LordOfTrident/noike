@@ -13,21 +13,21 @@ CFLAGS = -O2 -std=$(CSTD) -Wall -Wextra -Werror -pedantic -Wno-deprecated-declar
 
 build: $(OUT)
 
-$(OUT): $(DIRS) $(BIN) $(OBJ) $(SRC)
+$(OUT): $(DIRS) $(OBJ) $(SRC)
 	$(CC) $(CFLAGS) -o $(OUT) $(OBJ) $(CLIBS)
-
-$(BIN)/%/:
-	mkdir -p $@
-
-$(BIN)/%.o: src/%.c $(DEPS)
-	$(CC) -c $< $(CFLAGS) -o $@
 
 $(BIN):
 	mkdir -p $(BIN)
 
+$(BIN)/%.o: src/%.c $(DEPS)
+	$(CC) -c $< $(CFLAGS) -o $@
+
+$(BIN)/%/:
+	mkdir -p $@
+
 clean: $(BIN)
-	rm -r $(BIN)/*
-	rm $(OUT)
+	-rm -r $(BIN)/*
+	-rm $(OUT)
 
 all:
 	@echo build, clean
