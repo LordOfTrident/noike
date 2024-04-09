@@ -102,7 +102,7 @@ If you find any bugs, please, [create an issue and report them](https://github.c
 	<a href="https://en.wikipedia.org/wiki/C_(programming_language)">
 		<img alt="C99" src="https://img.shields.io/badge/C99-0069a9?style=for-the-badge&logo=c&logoColor=white">
 	</a>
-	<a href="https://github.com/nim-lang/sdl2">
+	<a href="https://www.libsdl.org/">
 		<img alt="SDL2" src="https://img.shields.io/badge/SDL2-1d4979?style=for-the-badge&logoColor=white">
 	</a>
 	<p align="center">Made with ❤️ love</p>
