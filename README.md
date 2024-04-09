@@ -59,10 +59,12 @@ The idea is essentially that you create an illusion of a moving shape by flippin
 filled canvas, but when you pause the video of the moving shape, you can clearly see there is
 nothing there.
 
+Play this video and pause at any point:
+
+https://github.com/LordOfTrident/noike/assets/80625541/2ee2e14c-4613-434f-87ca-7635c1173f2c
+
 ## Demo
-<p align="center">
-	<img src="./res/demo.gif" width="80%">
-</p>
+https://github.com/LordOfTrident/noike/assets/80625541/ce8d2de1-6631-44f5-a6f8-bd85f8fe4fd3
 
 ## Compiling
 ### Pre-requisites
