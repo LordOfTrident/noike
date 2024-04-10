@@ -225,11 +225,12 @@ static void youLost(void) {
 		int ret = fscanf(file, "%i", &state.bestScore);
 		fclose(file);
 
-		if (getScore() > state.bestScore || ret != 1) {
+		if (getScore() > state.bestScore || ret != 1)
 			saveScoreToFile(path);
-			state.bestScore = getScore();
-		}
 	}
+
+	if (getScore() > state.bestScore)
+		state.bestScore = getScore();
 
 	Core_pushScene(LostScene_new());
 }
